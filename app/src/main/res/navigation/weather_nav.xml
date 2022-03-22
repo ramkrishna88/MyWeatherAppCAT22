@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/ForecastFragment"
+    android:id="@+id/weather_nav">
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.example.myweatherappcat22.views.SearchCityFragment"
+        android:label="Search city"
+        tools:layout="@layout/fragment_search_city">
+
+        <action
+            android:id="@+id/action_SearchFragment_to_ForecastFragment"
+            app:destination="@id/ForecastFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ForecastFragment"
+        android:name="com.example.myweatherappcat22.views.ForecastFragment"
+        android:label="Forecast"
+        tools:layout="@layout/fragment_search_city">
+
+        <action
+            android:id="@+id/action_ForecastFragment_to_DetailsFragment"
+            app:destination="@id/DetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DetailsFragment"
+        android:name="com.example.myweatherappcat22.views.ForecastDetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_search_city">
+
+    </fragment>
+
+</navigation>
