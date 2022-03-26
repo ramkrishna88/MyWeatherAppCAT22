@@ -32,8 +32,5 @@ class ForecastViewHolder(private val binding: ForcastItemBinding) : RecyclerView
 
     fun bind(main: Main) {
         binding.weatherTemp.text = main.temp.toString()
-        binding.mRating.setProgress(2)
-
     }
-
 }
